@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Strategic Duelists</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /*‑‑‑ base ‑‑‑*/
+    :root { --bg:#fafafa; --fg:#222; --card:#fff; --line:#ccc; --link:#0066cc; --link-hover:#3388ff; }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#181818; --fg:#ddd; --card:#222; --line:#333; --link:#66b3ff; --link-hover:#99ccff; }
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--fg);font-family:system-ui,sans-serif;line-height:1.4}
+    a{color:var(--link);text-decoration:none;transition:color .2s}
+    a:hover{color:var(--link-hover)}
+    /*‑‑‑ layout ‑‑‑*/
+    header{background:#111;color:#eee;text-align:center;padding:1.5rem 1rem}
+    header h1{font-size:2rem;letter-spacing:.05em;text-transform:uppercase}
+    nav{margin-top:1rem}
+    nav a{color:#ddd;font-size:.9rem;margin:0 .5rem}
+    main{max-width:1000px;margin:0 auto;padding:1rem}
+    h2{margin-top:2rem;font-size:1.3rem;text-transform:uppercase;border-bottom:2px solid var(--line);padding-bottom:.3rem}
+    section.games{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    article.game{background:var(--card);border:1px solid var(--line);border-radius:6px;display:flex;flex-direction:column;overflow:hidden}
+    article img{width:430px;height:290px;object-fit:cover;object-position:center;display:block;margin:0 auto}
+    .game-info{padding:.8rem;flex:1;display:flex;flex-direction:column}
+    .game-info h3{font-size:1rem;margin:0 0 .5rem;text-transform:uppercase}
+    .game-info p{font-size:.85rem;margin:0 0 .6rem;flex:1}
+    .game-info a{font-weight:600;font-size:.85rem;margin-top:auto}
+    footer{margin-top:3rem;padding:1rem;text-align:center;font-size:.8rem;color:#666;border-top:1px solid var(--line)}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Strategic Duelists</h1>
+    <p>strategic thinking · no fluff · sharpen your mind</p>
+    <nav>
+      <a href="#board">Board</a>
+      <a href="#digital">Digital</a>
+      <a href="https://discord.gg/3bSsvXheBC" target="_blank" rel="noopener">Discord</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="about">About#</h2>
+    <p>Community for players who treat games as structured problem‑solving.</p>
+    <p>We are all about multi‑game tournaments and game nights. Our philosophy is that strategy games are more than just games. They are a way to sharpen one's mind, especially if the games played are diverse and complex.</p>
+    <p>Strategic Duelists believe that putting in thousands of hours into a particular game doesn't correlate with improving decision-making skills beyond said game. However, putting in thousands of hours into a variety of strategy games does.</p>
+    <p>Cash games and tournaments are allowed to spice things up.</p>
+
+    <h2 id="board">Board Games#</h2>
+    <section class="games">
+      <!-- Chess -->
+      <article class="game">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Staunton_chess_set.jpg" alt="Chess board">
+        <div class="game-info">
+          <h3>Chess</h3>
+          <p><a href="https://lichess.org" target="_blank">lichess</a> — free.</p>
+        </div>
+      </article>
+      <!-- Go -->
+      <article class="game">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Go_board.jpg" alt="Go board">
+        <div class="game-info">
+          <h3>Go (Baduk)</h3>
+          <p><a href="https://online-go.com" target="_blank">OGS</a> — free.</p>
+        </div>
+      </article>
+      <!-- MTG -->
+      <article class="game">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Magic_l%27assembl%C3%A9e_jeu.jpg?20140206171513" alt="Magic: the Gathering board state">
+        <div class="game-info">
+          <h3>Magic: The Gathering</h3>
+          <p><a href="https://cockatrice.github.io" target="_blank">Cockatrice</a> — free; <a href="https://magic.wizards.com/en/mtgarena" target="_blank">MTG Arena</a> / <a href="https://magic.wizards.com/en/mtgo" target="_blank">MTGO</a> — official.</p>
+        </div>
+      </article>
+      <!-- Netrunner -->
+      <article class="game">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Netrunner_-_Gateway_starter_decks.jpg" alt="Android Netrunner cards">
+        <div class="game-info">
+          <h3>Netrunner</h3>
+          <p><a href="https://www.jinteki.net" target="_blank">Jinteki.net</a> — free.</p>
+        </div>
+      </article>
+      <!-- Flesh & Blood -->
+      <article class="game">
+        <img src="/flesh-and-blood-cards.jpg" alt="Flesh & Blood cards">
+        <div class="game-info">
+          <h3>Flesh & Blood</h3>
+          <p><a href="https://www.talishar.com" target="_blank">Talishar</a> — free.</p>
+        </div>
+      </article>
+    </section>
+
+    <h2 id="digital">Computer Games#</h2>
+    <section class="games">
+      <!-- OpenRA -->
+      <article class="game">
+        <video width="430" height="290" autoplay loop muted playsinline>
+          <source src="https://www.openra.net/videos/red-alert-sizzle.webm" type="video/webm">
+        </video>
+        <div class="game-info">
+          <h3>OpenRA</h3>
+          <p><a href="https://www.openra.net" target="_blank">openra.net</a> — free.</p>
+        </div>
+      </article>
+      <!-- Line War -->
+      <article class="game">
+        <img src="/line-war.jpg" alt="Line War screenshot">
+        <div class="game-info">
+          <h3>Line War</h3>
+          <p><a href="https://store.steampowered.com/app/1309610/Line_War/" target="_blank">Steam</a> — $20.99.</p>
+        </div>
+      </article>
+      <!-- Eugen wargames -->
+      <article class="game">
+        <img src="/steel-division-2.jpg" alt="Steel Division 2 screenshot">
+        <div class="game-info">
+          <h3>Steel Division 2</h3>
+          <p><a href="https://store.steampowered.com/app/919640/Steel_Division_2/" target="_blank">Steam</a> — $69.99.</p>
+        </div>
+      </article>
+      <!-- AoE II -->
+      <article class="game">
+        <img src="/aoe2.jpg" alt="Age of Empires II">
+        <div class="game-info">
+          <h3>Age of Empires II</h3>
+          <p><a href="https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/" target="_blank">Steam</a> — $58.48.</p>
+        </div>
+      </article>
+      <!-- AoE IV -->
+      <article class="game">
+        <img src="/aoe4.jpg" alt="Age of Empires IV cover">
+        <div class="game-info">
+          <h3>Age of Empires IV</h3>
+          <p><a href="https://store.steampowered.com/app/1466860/Age_of_Empires_IV_Anniversary_Edition/" target="_blank">Steam</a> — $49.99.</p>
+        </div>
+      </article>
+      <!-- SC II -->
+      <article class="game">
+        <img src="/starcraft-ii.jpg" alt="StarCraft II box art">
+        <div class="game-info">
+          <h3>StarCraft II</h3>
+          <p><a href="https://us.shop.battle.net/en-us/product/starcraft-ii?p=33511" target="_blank">Starter Edition</a> — free.</p>
+        </div>
+      </article>
+      <!-- Brood War -->
+      <article class="game">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Valkyrie_squadron_%28StarCraft%29.png" alt="StarCraft Brood War box art">
+        <div class="game-info">
+          <h3>StarCraft: Brood War</h3>
+          <p><a href="https://eu.shop.battle.net/en-us/product/starcraft-remastered" target="_blank">Remastered</a> — $21.98.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Strategic Duelists. Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY‑SA 4.0</a>.</p>
+    <p>Images hot‑linked from Wikipedia / Wikimedia Commons and retain their original licenses.</p>
+  </footer>
+</body>
+</html>
